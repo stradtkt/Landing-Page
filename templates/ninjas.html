@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+  <title>Ninjas</title>
+</head>
+<body>
+  
+    <div class="wrapper">
+        <header>
+          <h1>Ninjas</h1>
+        </header>
+      
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/ninjas">Ninjas</a></li>
+            <li><a href="/dojos/new">Add New</a></li>
+          </ul>
+        </nav>
+
+        <div class="container">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Languages</th>
+                <th>Email</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Kevin Stradtman</td>
+                <td>Python, JavaScript</td>
+                <td>stradtkt22@gmail.com</td>
+                <td>Kevin is a determined Python and JavaScript developer</td>
+              </tr>
+              <tr>
+                <td>Debra Kellington</td>
+                <td>Java, Product Management</td>
+                <td>dkellington@gmail.com</td>
+                <td>Debra is a retired Java developer that has spent most of her career in product management</td>
+              </tr>
+              <tr>
+                <td>John Kellington</td>
+                <td>Java, CIO</td>
+                <td>jkellington@gmail.com</td>
+                <td>John is a Java Developer that has spent most of his career in charge of other developers</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+      </div>
+
+      <script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
